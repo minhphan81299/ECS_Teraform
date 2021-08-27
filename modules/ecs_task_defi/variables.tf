@@ -16,7 +16,7 @@ variable "WORKDIR" {
 }
 variable "ENTRYPOINT" {
   type    = list(string)
-  default = ["dotnet", "/App/QuickApp/bin/Release/net5.0/publish/QuickApp.dll"]
+  default = ["dotnet", "/App/QuickApp/bin/Release/net5.0/publish/QuickApp.dll"]s
 }
 
 variable "ENV" {

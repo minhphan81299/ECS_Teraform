@@ -20,7 +20,7 @@ resource "aws_db_instance" "database" {
   instance_class         = "db.t3.small"
   multi_az               = false
   username               = "sa"
-  password               = "Your_password123"
+  password               = var.pass
   availability_zone      = "ap-southeast-1a"
   skip_final_snapshot    = true
   vpc_security_group_ids = [aws_security_group.allows-mssql.id]
